@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DCC72DF329D812E400555FBC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCC72DF229D812E400555FBC /* main.cpp */; };
+		DCC72E0029D8141200555FBC /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCC72DFE29D8141200555FBC /* Application.cpp */; };
+		DCC72E0329D817D000555FBC /* World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCC72E0129D817D000555FBC /* World.cpp */; };
+		DCC72E0629D821A200555FBC /* Solid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCC72E0429D821A200555FBC /* Solid.cpp */; };
+		DCC72E0929D823E400555FBC /* Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCC72E0729D823E400555FBC /* Math.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCC72DEF29D812E400555FBC /* simple-physics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-physics"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC72DF229D812E400555FBC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		DCC72DF529D812E400555FBC /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cute_image.jpg; path = ../cute_image.jpg; sourceTree = "<group>"; };
-		DCC72DF629D812E400555FBC /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = nice_music.ogg; path = ../nice_music.ogg; sourceTree = "<group>"; };
-		DCC72DF729D812E400555FBC /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sansation.ttf; path = ../sansation.ttf; sourceTree = "<group>"; };
-		DCC72DF829D812E400555FBC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		DCC72DFE29D8141200555FBC /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		DCC72DFF29D8141200555FBC /* Application.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Application.hpp; sourceTree = "<group>"; };
+		DCC72E0129D817D000555FBC /* World.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = World.cpp; sourceTree = "<group>"; };
+		DCC72E0229D817D000555FBC /* World.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = World.hpp; sourceTree = "<group>"; };
+		DCC72E0429D821A200555FBC /* Solid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Solid.cpp; sourceTree = "<group>"; };
+		DCC72E0529D821A200555FBC /* Solid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Solid.hpp; sourceTree = "<group>"; };
+		DCC72E0729D823E400555FBC /* Math.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Math.cpp; sourceTree = "<group>"; };
+		DCC72E0829D823E400555FBC /* Math.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Math.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,20 +58,16 @@
 			isa = PBXGroup;
 			children = (
 				DCC72DF229D812E400555FBC /* main.cpp */,
-				DCC72DF429D812E400555FBC /* Resources */,
+				DCC72DFE29D8141200555FBC /* Application.cpp */,
+				DCC72DFF29D8141200555FBC /* Application.hpp */,
+				DCC72E0129D817D000555FBC /* World.cpp */,
+				DCC72E0229D817D000555FBC /* World.hpp */,
+				DCC72E0429D821A200555FBC /* Solid.cpp */,
+				DCC72E0529D821A200555FBC /* Solid.hpp */,
+				DCC72E0729D823E400555FBC /* Math.cpp */,
+				DCC72E0829D823E400555FBC /* Math.hpp */,
 			);
 			path = "simple-physics";
-			sourceTree = "<group>";
-		};
-		DCC72DF429D812E400555FBC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DCC72DF529D812E400555FBC /* cute_image.jpg */,
-				DCC72DF629D812E400555FBC /* nice_music.ogg */,
-				DCC72DF729D812E400555FBC /* sansation.ttf */,
-				DCC72DF829D812E400555FBC /* icon.png */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +127,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC72E0029D8141200555FBC /* Application.cpp in Sources */,
+				DCC72E0629D821A200555FBC /* Solid.cpp in Sources */,
 				DCC72DF329D812E400555FBC /* main.cpp in Sources */,
+				DCC72E0329D817D000555FBC /* World.cpp in Sources */,
+				DCC72E0929D823E400555FBC /* Math.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,16 +229,27 @@
 		DCC72DFC29D812E400555FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGYWW555Y;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		DCC72DFD29D812E400555FBC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3MGYWW555Y;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
